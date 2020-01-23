@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thomasbrown6/DayCareManager.git"
+    "url": "git+https://github.com/thomasbrown6/DayCareManagerServer.git"
   },
   "author": "Thomas Brown",
   "license": "ISC",
