@@ -9,8 +9,7 @@
     "client": "npm start --prefix client",
     "build": "cd client && npm run build",
     "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
-    "install": "npm install",
-    "azure": "NPM_CONFIG_PRODUCTION=false npm install && npm start"
+    "install": "npm install"
   },
   "repository": {
     "type": "git",
