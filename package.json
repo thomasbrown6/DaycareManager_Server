@@ -1,0 +1,41 @@
+{
+  "name": "daycaremanager",
+  "version": "1.0.0",
+  "description": "Daycare management app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "install": "cd client && npm install",
+    "azure": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasbrown6/DayCareManager.git"
+  },
+  "author": "Thomas Brown",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "@material-ui/icons": "^4.5.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "material-table": "^1.55.0",
+    "mongoose": "^5.7.12",
+    "node": "^10.14.2",
+    "npm": "^6.12.0",
+    "recharts": "^2.0.0-beta.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.0"
+  }
+}

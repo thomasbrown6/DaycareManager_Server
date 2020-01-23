@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2014adcd-e48a-42a2-a550-3972817aabed/resourceGroups/DayCareResource/providers/Microsoft.Web/sites/DayCareManager",
+    "appService.deploySubpath": "",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
