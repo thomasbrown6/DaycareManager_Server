@@ -1,5 +1,5 @@
 {
-  "name": "daycaremanager",
+  "name": "daycaremanager_server",
   "version": "1.0.0",
   "description": "Daycare management app",
   "main": "server.js",
