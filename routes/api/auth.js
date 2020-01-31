@@ -51,16 +51,14 @@ router.post(
       const isMatch = await bcrypt.compare(password, user.password);
 
       if (!isMatch) {
-        return res
-          .status(400)
-          .json({
-            errors: [
-              {
-                msg:
-                  'Wrong password. Try again or click Forgot password to reset it.'
-              }
-            ]
-          });
+        return res.status(400).json({
+          errors: [
+            {
+              msg:
+                'Wrong password. Try again or click Forgot password to reset it.'
+            }
+          ]
+        });
       }
 
       //return jsonwebtoken to log user in once they register
@@ -79,7 +77,7 @@ router.post(
           res.json({ token });
         }
       );
-    } catch(err) {
+    } catch (err) {
       console.error(err.message);
       res.status(500).send('Server error');
     }
