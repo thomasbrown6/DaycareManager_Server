@@ -68,7 +68,7 @@ router.post(
         }
       };
       //config.get('jwtSecret'),
-      const configdata = config.get('jwtSecret');
+      //const configdata = config.get('jwtSecret');
       console.log('config data here:  ' + configdata);
       jwt.sign(
         payload,
