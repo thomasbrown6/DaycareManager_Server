@@ -7,7 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server",
     "dev": "concurrently \"nodemon server.js\"",
-    "azure": "NPM_CONFIG_PRODUCTION=false npm install && npm start"
+    "azure": "npm start"
   },
   "repository": {
     "type": "git",
